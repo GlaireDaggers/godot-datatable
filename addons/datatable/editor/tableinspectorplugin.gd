@@ -9,10 +9,10 @@ func _init(plugin: EditorPlugin):
 	self.plugin = plugin;
 
 func can_handle(object):
-	return object is Table;
+	return object is DataTable;
 	
 func parse_begin(object):
-	schema = (object as Table)._get_schema();
+	schema = (object as DataTable)._get_schema();
 	
 func parse_property(object, type, path, hint, hint_text, usage):
 	if path == "tableData":
