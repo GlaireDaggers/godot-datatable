@@ -14,7 +14,9 @@ func _get_schema():
 	return [ SchemaColumn.new("level", TYPE_INT, 1), SchemaColumn.new("xp to level", TYPE_INT, 0), SchemaColumn.new("extra hp", TYPE_INT, 0), SchemaColumn.new("achievement icon", TYPE_OBJECT, null) ];
 ```
 
-And then simply create a resource of your LevelTable class. The inspector will display a table to which you can add new rows & edit existing rows based on the schema declared above.
+And then simply create a resource of your LevelTable class. The inspector will display a table to which you can add new rows & edit existing rows based on the schema declared above:
+
+![A screenshot of a table of level parameters (level, XP to level, HP gain, & achievement icon) displayed in the Godot inspector](screenshots/scr1.png)
 
 Given a reference to your LevelTable resource, you can also use the fluent search API:
 
