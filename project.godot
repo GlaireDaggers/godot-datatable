@@ -12,7 +12,17 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "DataTable",
 "language": "GDScript",
-"path": "res://addons/datatable/runtime/table.gd"
+"path": "res://addons/datatable/runtime/datatable.gd"
+}, {
+"base": "EditorProperty",
+"class": "DataTableEditor",
+"language": "GDScript",
+"path": "res://addons/datatable/editor/datatableeditor.gd"
+}, {
+"base": "EditorInspectorPlugin",
+"class": "DataTableInspectorPlugin",
+"language": "GDScript",
+"path": "res://addons/datatable/editor/datatableinspectorplugin.gd"
 }, {
 "base": "DataTable",
 "class": "LevelTable",
@@ -26,6 +36,8 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "DataTable": "",
+"DataTableEditor": "",
+"DataTableInspectorPlugin": "",
 "LevelTable": "",
 "PlayerTable": ""
 }
@@ -33,6 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Data Table"
+run/main_scene="res://example/main.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
